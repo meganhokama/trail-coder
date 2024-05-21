@@ -24,7 +24,7 @@ We decided that one of the pieces of control that we wanted the player to have w
 (set: $name to (prompt: "What is your name?", ""))
 And then any time that we were going to use the player's name you use the variable $name and it have a pop-up box that allows players to type in the name of their choosing. 
 
-_Question Prompts _
+**Question Prompts**
 
 We wanted to have players exercise what they have learned by allowing them to input answers rather than simply identifying the answer. We did this by implementing the code below:
 
@@ -36,7 +36,7 @@ We wanted to have players exercise what they have learned by allowing them to in
 
 By storing the question into an item, you are able to prompt a question requiring certain answers. We wanted to allow two acceptable answers so we used “or” as a way to allow players to submit either double or single quoted print answers. Any other answer links to a different passage that signals that the player inputted an incorrect answer. 
 
-_Variable counters_
+**Variable counters**
 
 Throughout the game each choice you make has a variable counter associated with it. Each decision influences three category counters: health, strength, and knowledge. We wanted to replicate the stats similar to the Oregon Trail so choices do affect your stats. 
 Depending on their choice of occupation and state in the customization passage, the player gains either +5 knowledge, strength, or health points. Another instance where player’s decisions affect their points is whether they select their item: med kits (+5 health), clothing (+5 knowledge), and bread (+5 strength). Additionally, a player will lose -10 points from their health bar if they answer a question incorrectly. 
@@ -45,7 +45,7 @@ You are able to see your stats in a floating box in the upper left corner throug
 strength: $strength]
 By putting 4 equal signs after the X and Y, it allows you to space where the float box should be placed. 
 
-_Health bar_
+**Health bar**
 
 This was honestly a very tricky process, however, this involved going into the stylesheet that allowed you to create a bar. You access the stylesheet by clicking the up arrow on the bottom left of your opened twine file and shown in the picture below. Once in the story stylesheet, a screen will appear where you can type in code which allows you to adjust the size and style of the bar. The code we used specifically is this:
 #health-bar {
@@ -81,13 +81,13 @@ We set the max health in the game to 100 before the start of the game and depend
 (print: "<script>GE.updateHeathBar(" + (text: $maxHealth) + "," + (text: $health) + ");")
 
 
-_Using Pictures:_
+**Using Pictures:**
 
 Pictures can be added to the game as well to help with immersion. An image can be place in the game by using this code:  <center><img src= YOUR URL HERE ></center> 
 It is important to note that the URL does need to lead to a direct jpg image, just leading to a general website will not get the image to show up. In order to fix this and also ensure licensing we found out images for Trail Coder using Google’s creative commons license tool. To find this go to google images, once there click the tools button below and to the right of the search bar. This will bring up more options. Click ‘Usage Rights” and then choose “Creative Commons licenses”. This should bring you to pictures that can easily be licensed for creative uses. We only used pictures from Wikimedia website. We also found that in order for the image to load properly you need to not just click the image to get to the website, but then click it again just so you are seeing the URL of just the image itself. Below is an example code of a picture that is centered on the screen with a set width. 
 <center><img src= https://upload.wikimedia.org/wikipedia/commons/e/e7/Wild_west_(5882792440).jpg width='600'></center> 
 
-_Changing Font: _
+**Changing Font:**
 
 The general font of the game can also be edited using the story stylesheet. You access the stylesheet by clicking the up arrow on the bottom left of your opened twine file and shown in the picture below. Once in the story stylesheet a screen will appear where you can type in code which changes your font type. The code we used specifically is this:
 
@@ -101,7 +101,7 @@ tw-story {
 
 This code created an Oregon Trail-like feel in our game.
 
-Additional Twine Resources: 
+**Additional Twine Resources:** 
 
 There are many Twine concepts we did not use in Trail Coder, however, that doesn’t mean that providing more resources wouldn't be helpful. Below are some concepts that could be included into Twine games, but were not implemented in Trail Coder. Dr. Meaghan Wetherell had students create a game called SciCombat and some of the below sections were written by Dr. Wetherell to describe issues she was having with building that game, but could be very applicable to any game written in Twine..
  
